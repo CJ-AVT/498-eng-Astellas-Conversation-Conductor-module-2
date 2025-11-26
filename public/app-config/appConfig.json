@@ -9,25 +9,25 @@
     "questions": [
       {
         "id": "Question_1",
-        "person": "MARCO: ",
-        "person_2": "Colin: ",
-        "questionText": "“What's your call?”",
+        "person": "Karen: ",
+        "person_2": "Leadership: ",
+        "questionText": "“What will you do”",
         "answers": [
           {
             "id": "Answer_1",
-            "text": "Let’s launch now. We can fix the data later.",
-            "response": "",
-            "points": 0
-          },
-          {
-            "id": "Answer_2",
-            "text": "We need to pause and align. What exactly do these metrics represent?",
+            "text": "Blend & Model (Provisional)",
             "response": "",
             "points": 20
           },
           {
+            "id": "Answer_2",
+            "text": "Stage-Gate Triage (Minimum Viable Truth)",
+            "response": "",
+            "points": 0
+          },
+          {
             "id": "Answer_3",
-            "text": "Ask the agency to merge the dashboards and report back tomorrow.",
+            "text": "Play It Ultra-Safe (Narrow & Certain)",
             "response": "",
             "points": 0
           }
@@ -60,7 +60,7 @@
   },
   "assets": {
     "images": {
-      "backgroundImageURL": "./images/background_3.jpg",
+      "backgroundImageURL": "./images/background.jpg",
       "coverImageURL": "",
       "avatarImageURL": "",
       "notEffective": "./images/emoji_cold_sweat.png",
