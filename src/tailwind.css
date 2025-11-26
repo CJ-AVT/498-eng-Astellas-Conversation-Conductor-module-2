@@ -1,0 +1,88 @@
+@config "../tailwind.config.ts";
+@import "tailwindcss";
+
+/* Add this to your global CSS file */
+@keyframes streak-popup {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 0) scale(0.8);
+  }
+  10% {
+    opacity: 1;
+    transform: translate(-50%, -10px) scale(1.05);
+  }
+  80% {
+    opacity: 1;
+    transform: translate(-50%, -10px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -40px) scale(0.95);
+  }
+}
+.animate-streak-popup {
+  animation: streak-popup 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#root {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* Prevent scrolling on body if app content is scrollable */
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior-y: contain;
+  /* Default background, can be overridden by app */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.continue-button {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translatex(-50%);
+  z-index: 9999;
+  width: 15rem;
+  height: 3rem;
+  background-color: #0094ff; /* Blue */
+  color: white;
+  border: none;
+  border-radius: 6px; /* rounded-md */
+  cursor: pointer;
+  font-size: 0.9rem; /* text-lg */
+}
+
+.continue-button:hover {
+  opacity: 90%;
+}
+
+@font-face {
+  font-family: "News Gothic Condensed Bold";
+  src: url("/fonts/news_gothic_condensed_bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/inter.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

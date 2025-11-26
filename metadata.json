@@ -1,0 +1,5 @@
+{
+  "name": "Interactive Quiz Challenge",
+  "description": "A mobile-view multiple choice quiz application that presents a scenario with an avatar and allows users to select an answer from a list of options, based on configurable quiz data.",
+  "requestFramePermissions": []
+}

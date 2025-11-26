@@ -1,0 +1,119 @@
+{
+  "content": {
+    "progressMeterTitle": "Conversation effectiveness meter",
+    "nextText": "Next Question",
+    "continueText": "Continue",
+    "timerTitle": "",
+    "timerDemonination1": "",
+    "timerDemonination2": "",
+    "questions": [
+      {
+        "id": "Question_1",
+        "person": "MARCO: ",
+        "person_2": "Colin: ",
+        "questionText": "“What's your call?”",
+        "answers": [
+          {
+            "id": "Answer_1",
+            "text": "Let’s launch now. We can fix the data later.",
+            "response": "",
+            "points": 0
+          },
+          {
+            "id": "Answer_2",
+            "text": "We need to pause and align. What exactly do these metrics represent?",
+            "response": "",
+            "points": 20
+          },
+          {
+            "id": "Answer_3",
+            "text": "Ask the agency to merge the dashboards and report back tomorrow.",
+            "response": "",
+            "points": 0
+          }
+        ]
+      }
+    ]
+  },
+  "theme": {
+    "colors": {
+      "page-background": "#151B23",
+      "question-background": "white",
+      "question-text": "#262626",
+      "answer-background": "#000000",
+      "answer-text": "#FFFFFF",
+      "answer-incorrect": "#E84C3C",
+      "answer-neutral": "#E8B931",
+      "answer-correct": "#3BBB68",
+      "progress-meter-background": "rgba(0, 0, 0, 0.5)",
+      "progress-meter-border": "rgba(203, 213, 225, 0.5)",
+      "progress-meter-text": "white",
+      "help-button-text": "white",
+      "help-button-background": "#155DFC",
+      "help-popup-text": "black",
+      "help-popup-background": "white",
+      "timer-title": "#FFFFFF",
+      "timer-high": "#3BBB68",
+      "timer-mid": "#E8B931",
+      "timer-low": "#E84C3C"
+    }
+  },
+  "assets": {
+    "images": {
+      "backgroundImageURL": "./images/background_3.jpg",
+      "coverImageURL": "",
+      "avatarImageURL": "",
+      "notEffective": "./images/emoji_cold_sweat.png",
+      "neutral": "./images/emoji_neutral.png",
+      "effective": "./images/emoji_happy.png"
+    },
+    "videos": {
+      "startVideoURL": "",
+      "backgroundVideoDesktopAmbientURL": "",
+      "backgroundVideoDesktopNeutralURL": "",
+      "backgroundVideoDesktopPositiveURL": "",
+      "backgroundVideoDesktopNegativeURL": "",
+      "backgroundVideoMobileAmbientURL": "",
+      "backgroundVideoMobileNeutralURL": "",
+      "backgroundVideoMobilePositiveURL": "",
+      "backgroundVideoMobileNegativeURL": ""
+    },
+    "lotties": {
+      "correctLottieURL": "",
+      "neutralLottieURL": "",
+      "wrongLottieURL": "",
+      "bonusPointsLottieURL": ""
+    },
+    "sfx": {
+      "correctSoundURL": "./sfx/positive.wav",
+      "wrongSoundURL": "./sfx/negative.wav"
+    }
+  },
+  "settings": {
+    "initialScore": 0,
+    "maxStreak": 6,
+    "hideScore": false,
+    "endAutomatically": false,
+    "answerButtonHoverState": false,
+    "showFullScreenButton": false,
+    "showRestartButton": false,
+    "backgroundVideoLoop": true,
+    "helpPopupEnabled": false,
+    "mobileBoundary": 1280,
+    "progressBarChangePercentage": 25,
+    "progressBarStartingPercentage": 25,
+    "showQuestionCounter": false,
+    "enableStreakBonus": false,
+    "enableTimer": false,
+    "timerStartingValue": 120,
+    "timerAllowance": 30,
+    "volumeOff": false,
+    "showProgressMeter": false,
+    "points": {
+      "correct": 20,
+      "neutral": 10,
+      "incorrect": 0,
+      "bonusPercentage": 50
+    }
+  }
+}
