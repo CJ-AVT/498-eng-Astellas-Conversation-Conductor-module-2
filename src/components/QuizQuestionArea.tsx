@@ -47,7 +47,7 @@ const QuizQuestionArea: React.FC<QuizQuestionAreaProps> = ({ isMobile, currentQu
   // Desktop
   return (
     <div className="relative transition-opacity duration-300 bottom-0">
-      <div className="flex flex-col items-center space-y-4">
+      <div className="flex flex-col items-start pl-30 space-y-4">
         {nextButton}
         <Question person={currentQuestion.person} text={currentQuestion.questionText} animate={animateQuestion} />
       </div>

@@ -6,28 +6,32 @@
     "timerTitle": "",
     "timerDemonination1": "",
     "timerDemonination2": "",
+    "questionPrompt": "Choose your data strategy for today’s one-page insight",
     "questions": [
       {
         "id": "Question_1",
         "person": "Karen: ",
         "person_2": "Leadership: ",
-        "questionText": "“What will you do”",
+        "questionText": "“What will you do, Marketer?”",
         "answers": [
           {
             "id": "Answer_1",
             "text": "Blend & Model (Provisional)",
+            "subtext": "Fast directional truth. Higher uncertainty.",
             "response": "",
             "points": 0
           },
           {
             "id": "Answer_2",
             "text": "Stage-Gate Triage (Minimum Viable Truth)",
+            "subtext": "Balanced: keep only data that passes core checks.",
             "response": "",
             "points": 20
           },
           {
             "id": "Answer_3",
             "text": "Play It Ultra-Safe (Narrow & Certain)",
+            "subtext": "Fully verified only. Safe but limited story.",
             "response": "",
             "points": 0
           }

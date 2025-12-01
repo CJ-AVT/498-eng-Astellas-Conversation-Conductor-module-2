@@ -360,9 +360,40 @@ const QuizContainer: React.FC<QuizContainerProps> = ({ onQuizComplete }) => {
                       />
                     )}
                     </div>
-                    <div className="relative z-20 flex flex-col gap-5 pointer-events-auto w-2xl h-full justify-end -left-31 -top-34 -ri">
-                      <h1 className={`text-white text-xl font-bold text-center ${isSubmitted && selectedAnswer ? 'opacity-0' : 'opacity-100'}`}>Choose a response to continue</h1>
+                    <div className="relative z-20 flex flex-col gap-5 pointer-events-auto items-center w-2xl h-full justify-end top-10 left-10 -ri">
+                      <h1 className={`text-white text-xl font-bold text-center bg-[var(--color-answer-background)]/50 pt-4 pb-4 w-11/12 -top-4 ${isSubmitted && selectedAnswer ? 'opacity-0' : 'opacity-100'}`}>{content.questionPrompt}</h1>
                       <QuizAnswers {...answerProps} />
+                      <div className="w-full flex flex-col gap-2 items-end justify-end">
+                        <div className="flex flex-col gap-2 w-3/4 items-center">
+                          <p className="text-white font-bold rounded-lg bg-[var(--color-answer-background)]/50 pt-2 pb-2 pr-8 pl-8">
+                            Datasets Available
+                          </p>
+                        </div>
+                        <div className="flex flex-col gap-2 w-3/4">
+                          <p className="flex flex-col gap-2 text-white font-medium rounded-lg bg-[var(--color-answer-background)]/50 p-6">
+                            <div className="flex flex-row gap-2 items-center">
+                              <span className="text-lg">CRM - </span>
+                              <span className="font-normal">4,600 verified HCP interactions</span>
+                            </div>
+                            <div className="flex flex-row gap-2 items-center">
+                              <span className="text-lg">Webinar - </span>
+                              <span className="font-normal">120 attendees (agency data)</span>
+                            </div>
+                            <div className="flex flex-row gap-2 items-center">
+                              <span className="text-lg">Patient App - </span>
+                              <span className="font-normal">adherence data (missing consent)</span>
+                            </div>
+                            <div className="flex flex-row gap-2 items-center">
+                              <span className="text-lg">IQVIA Market Report - </span>
+                              <span className="font-normal">aggregated trend data</span>
+                            </div>
+                            <div className="flex flex-row gap-2 items-center">
+                              <span className="text-lg">Forecasting Sheet - </span>
+                              <span className="font-normal">last updated 6 months ago</span>
+                            </div>
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <QuizQuestionArea {...questionAreaProps} />

@@ -10,6 +10,7 @@ export interface TAnswer {
   text: string;
   response: string;
   points: number;
+  subtext: string;
 }
 
 export interface TAppConfig {
@@ -18,6 +19,7 @@ export interface TAppConfig {
     nextText: string;
     continueText: string;
     timerTitle: string;
+    questionPrompt: string;
     timerDemonimation1: string;
     timerDemonimation2: string;
     questions: {
